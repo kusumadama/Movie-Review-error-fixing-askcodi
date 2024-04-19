@@ -19,11 +19,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="dark-light-toggle">
-                <label class="switch" for="dark-light-toggle">
-                    <input type="checkbox" id="dark-light-toggle">
-                    <span class="slider round"></span>
-                </label>
-                <span class="dark-light-text">Dark Mode</span>
+                <label class="switch" for="dark-light-toggle">Dark Mode</label>
+                <input type="checkbox" id="dark-light-toggle">
             </div>
         </nav>
     </header>
@@ -59,10 +56,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const darkLightToggle = document.querySelector('.dark-light-toggle input');
-            const darkLightText = document.querySelector('.dark-light-text');
             darkLightToggle.addEventListener('change', () => {
                 document.body.classList.toggle('dark-mode');
-                darkLightText.textContent = darkLightToggle.checked ? 'Light Mode' : 'Dark Mode';
             });
         });
     </script>
